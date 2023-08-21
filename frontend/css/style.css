@@ -1,0 +1,174 @@
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.conteiner-principal {
+  position: relative;
+}
+
+.cabecalho {
+  position: relative;
+  height: 60px;
+  padding: 10px;
+  background: #412973;
+  color: #fff;
+}
+
+.logomarca {
+  margin-left: 100px;
+}
+
+.nav-principal {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+}
+
+.conteiner-conteudo-um {
+  background: url(/img/fundo-conteudo1.jpg) no-repeat center;
+  height: 600px;
+  text-align: center;
+}
+
+.img-conteudo-um {
+  margin: 5% 0% 0% 0%;
+  display: inline-block;
+}
+
+.conteiner-buttom-um {
+  margin: 5% 20% 0px 0px;
+  display: inline-block;
+}
+
+.buttom-um {
+  padding: 15px;
+  border-radius: 20px;
+  background: #EB9064;
+  transition: 1.0s;
+}
+
+.buttom-um:hover {
+  background: #412973;
+  transition: 1.0s;
+}
+
+.conteiner-card-dois {
+  position: relative;
+  padding: 50px;
+  text-align: center;
+}
+
+.card-do {
+  display: inline-block;
+  width: 220px;
+  height: 250px;
+  padding: 20px;
+  margin: 50px 50px 0px 0px;
+  border: 1px solid #EB9064;
+  border-radius: 15px;
+  box-shadow: 13px 12px 40px 5px rgba(100, 100, 100, 0.5);
+  transition-duration: 0.5s;
+}
+
+.card-do:hover {
+  transition-duration: 0.5s;
+  transform: translateY(-10px);
+
+}
+
+.text-card-do {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.conteiner-conteudo-tres {
+  padding-left: 100px;
+}
+
+.img-conteudo-tres {
+  display: inline-block;
+  margin-left: 10%;
+}
+
+.text-conteudo-tres {
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+}
+
+.rodape {
+  background: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.link-site {
+  color: #fff;
+}
+
+.conteiner-img-rodape {
+  margin-bottom: 10px;
+}
+
+@media (max-width:1280px) {
+  li {
+    margin-right: 20px;
+  }
+
+  .logomarca {
+    margin-left: 2px;
+  }
+
+  .nav-principal {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+  }
+
+  .img-conteudo-um {
+    width: 80%;
+    max-width: 600px;
+    margin: 5% 0% 0% 0%;
+  }
+
+  .conteiner-buttom-um {
+    display: inline-block;
+    margin: 10% 5% 0% 10%;
+  }
+
+  .conteiner-conteudo-tres {
+    text-align: center;
+    padding-left: 10px;
+  }
+
+  .text-conteudo-tres {
+    width: 80%;
+  }
+
+  .img-conteudo-tres {
+    display: block;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+  }
+
+}
+
+@media (max-width:870px) {
+  .img-conteudo-um {
+    display: none;
+  }
+
+  .conteiner-buttom-um {
+    display: inline-block;
+    margin-top: 250px;
+  }
+
+}

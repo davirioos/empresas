@@ -1,0 +1,39 @@
+.conteiner-links {
+  text-align: center;
+  margin: auto;
+}
+
+.conteiner-cadastra {
+  display: inline-block;
+  margin-right: 200px;
+}
+
+.conteiner-visualizar {
+  display: inline-block;
+}
+
+.img-conteiner-produtos {
+  width: 400px;
+}
+
+.buttom-style {
+  padding: 20px;
+  background: #0A84FF;
+  border-radius: 8px;
+}
+
+@media (max-width:1022px) {
+  .img-conteiner-produtos {
+    display: none;
+  }
+
+  .conteiner-cadastra {
+    display: block;
+    margin: 200px 10px 100px 10px;
+  }
+
+  .conteiner-visualizar {
+    display: block;
+    margin: 0px 10px 100px 10px;
+  }
+}

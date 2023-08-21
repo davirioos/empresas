@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Empresa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="conteiner-principal">
+      <div class="cabecalho">
+        <h3 class="logomarca">Empreendorismo</h3>
+      </div>
+      <%if(!user) { %>
+      <div class="nav-principal">
+        <ul>
+          <li>
+            <a href="/login/index">
+              Login
+            </a>
+          </li>
+          <li>
+            <a href="/registro/index">
+              Cadastro
+            </a>
+          </li>
+        </ul>
+      </div>
+      <% } else{ %>
+      <div class="nav-principal">
+        <ul>
+          <li>
+            <a href="/produtos/index">
+              Produtos
+            </a>
+          </li>
+          <li>
+            <a href="/login/logout">
+              Sair
+            </a>
+          </li>
+        </ul>
+      </div>
+      <% } %>
+      <%- include('includes/messages')%>
+      <div class="conteiner-conteudo-um">
+        <div class="conteiner-buttom-um">
+          <%if(!user) { %>
+          <a href="/login/index">
+            <div class="buttom-um">Entrer Agora</div>
+          </a>
+          <% } else{ %>
+          <a href="/produtos/index">
+            <div class="buttom-um">Produto</div>
+          </a>
+          <% } %>
+        </div>
+        <div class="img-conteudo-um">
+          <img src="/img/imagememprende.png" class="img-conteudo-um">
+        </div>
+
+      </div>
+      <div class="conteiner-conteudo-dois">
+        <div class="conteiner-card-dois">
+          <div class="card-do">
+            <img src="/img/imgcad1.png" width="50px">
+            <p class="text-card-do">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam
+            </p>
+          </div>
+          <div class="card-do">
+            <img src="/img/imgcard2.png" width="50px">
+            <p class="text-card-do">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam
+            </p>
+          </div>
+          <div class="card-do">
+            <img src="/img/imgcard3.png" width="50px">
+            <p class="text-card-do">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam
+            </p>
+          </div>
+          <div class="card-do">
+            <img src="/img/imgcard4.png" width="50px">
+            <p class="text-card-do">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="conteiner-conteudo-tres">
+
+        <div class="img-conteudo-tres">
+          <img src="/img/empresarioimgcon3.png" class="img-conteudo-tres">
+        </div>
+        <div class="text-conteudo-tres">
+          <p class="text-tres">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam
+          </p>
+        </div>
+      </div>
+      <div class="rodape">
+        <div class="conteiner-img-rodape">
+          <a href="https://github.com/DaviRIos001"><img src="/img/git.png" width="30px"></a>
+          <a href="https://www.instagram.com/davirioss0/"><img src="/img/instagram.png" width="30px"></a>
+          <a href="https://www.devrios.com.br/"><img src="/img/site.png" width="30px"></a>
+        </div>
+        <a href="https://www.devrios.com.br/" class="link-site">https://www.devrios.com.br/</a>
+      </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </body>
+</html>
